@@ -1,37 +1,3 @@
-html {
-  font-family: sans-serif;
-  box-sizing: border-box;
-}
-::-webkit-scrollbar{
-
-  width:0;
-  
-  }
-body {
-  margin: 0;
-}
-body, h1, h2, h3, h4, h5, h6, hr, p {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-ul li {
-  display: inline;
-  margin-right: 20px;
-  font-family: 'Montserrat';
-}
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-}
-
 .logo-container {
   border-bottom: 1px solid #D4DCE2;
   margin-bottom: 28px;
@@ -53,18 +19,24 @@ a {
   align-items: center;
   justify-content: space-around;
   padding-bottom: 27px;
-  max-width: 775px;
-  margin: 0 auto
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.menu img {
+  width: 25px;
+  height: 25px;
 }
 
 .main-page {
   display: flex;
   flex-direction: column;
 }
+
 .top-add {
-  padding: 0 50px;
+  margin: 0 50px;
   background-image: url('./img/top-img.jpeg');
   background-size: cover;
+  background-position: center;
   height: 672px;
 }
 .top-add-content-container {
@@ -74,7 +46,7 @@ a {
 .top-add-content {
   font-family: 'Source Han Sans SC';
   font-size: 80px;
-  width: 573px;
+  width: 595px;
   margin: 120px 0px 322px auto;
 }
 
@@ -82,12 +54,12 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 99px;
   justify-content: space-around;
-  margin: 99px 165px 0 168px;
-  /* need change set maxwidth 1110px */
+  margin: 100px auto 0 auto;
+  max-width: 1440px;
+  align-items: center;
+  width: 100%;
 }
-
 .sophie-top-img-container {
   max-width: 549px;
   max-height: 347px;
@@ -99,32 +71,32 @@ a {
   background-size: cover;
   margin-right: 85px;
 }
-
 .sophie-content {
   width: calc(300px + 12vw);
   height: calc(200px + 10vw);
 }
-
 .sophie-content h2{
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 32px;
+  font-family: 'Montserrat';
 }
 .sophie-content h3{
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 32px;
+  font-family: 'Source Han Sans SC';
 }
 .sophie-content p {
   font-size: 18px;
   font-weight: 300;
+  font-family: 'Source Han Sans SC';
 }
 .sophie-left-img-container {
   width: calc(300px + 11.25vw);
   height: calc(400px + 7vw);
   position: relative;
   margin-top: 84px;
- 
 }
 .sophie-left-img-red {
   position: relative;
@@ -164,13 +136,16 @@ a {
 }
 
 .trust {
-  margin-top: 108px;
+  margin: 108px auto 0 auto;
+  max-width: 1440px;
+  width: 100%;
 }
 .trust h2 {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
   margin-bottom: 62px;
+  font-family: 'Source Han Sans SC';
 }
 .trust-box {
   display: flex;
@@ -179,6 +154,9 @@ a {
   justify-content: space-around;
   width: 100%;
   margin: 0 auto;
+}
+.trust-box_item{
+  position: relative;
 }
 .trust-box_item img {
   width: 194px;
@@ -193,16 +171,22 @@ a {
   text-align: center;
   font-weight: 300;
   font-size: 18px;
+  font-family: "Montserrat";
 }
-/* .trust-box_item p::before {
+.trust-box_item-content::before {
   content: '';
   position: absolute;
   width: 40px;
   height: 2px;
-  top: -15px;
-  left: 50%;
+  top: 300px;
+  left: 40%;
+}
+.trust-box .trust-box_item:nth-of-type(1) p:before,.trust-box .trust-box_item:nth-of-type(3) p:before {
   background-color: #002654;
-} */
+}
+.trust-box .trust-box_item:nth-of-type(2) p:before,.trust-box .trust-box_item:nth-of-type(4) p:before {
+  background-color: #C41112;
+}
 
 .iphone {
   width: 100%;
@@ -232,17 +216,19 @@ a {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 34px;
+  font-family: 'Source Han Sans SC';
 }
 .iphone-content_item > p {
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 22px;
+  font-family: 'Source Han Sans SC';
 }
 .iphone-content_item-qr {
   display: flex;
 }
 .iphone-content_item-qr img {
-  width: 126px;
+  width: 133px;
   height: 133px;
   margin-right: 18.66px;
 }
@@ -252,10 +238,12 @@ a {
 .iphone-content_item-qr-content p:nth-child(1) {
   font-size: 18px;
   font-weight: 500;
+  font-family: 'Source Han Sans SC';
 }
 .iphone-content_item-qr-content p:nth-child(2) {
   font-size: 18px;
   font-weight: 300;
+  font-family: 'Source Han Sans SC';
 }
 
 .brand {
@@ -266,6 +254,7 @@ a {
   font-weight: 700;
   text-align: center;
   margin-bottom: 76px;
+  font-family: 'Source Han Sans SC';
 }
 .brand-box {
   display: flex;
@@ -281,10 +270,10 @@ a {
 }
 .brand-box img {
   width: 139px;
-  height: 61px;
+  height: 85px;
   margin: 0 auto;
 }
-.brand-button {
+.button-big {
   width: 180px;
   height: 52px;
   margin: 0 auto;
@@ -295,11 +284,142 @@ a {
   justify-content: center;
 }
 
+.meet {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+.meet-box-up {
+  position: absolute;
+  width: calc(784px + 16vw);
+  height: calc(384px + 17.15vw);
+  border: 1px dashed #002654;
+  z-index: 2;
+}
+.meet-box-bottom {
+  position: relative;
+  top: 16px;
+  left: 16px;
+  width: calc(784px + 16vw);
+  height: calc(384px + 17.15vw);
+  background-color: #F2F7FA;
+  display: flex;
+}
+.meet-box-bottom img:first-child {
+  width: calc(200px + 8.89vw);
+  height: calc(300px + 8.89vw);
+  margin-top: 85px;
+  margin-left: 47px;
+  margin-right: calc(56px + 3.5vw);
+}
+.meet-box-bottom_content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 93px;
+  width: calc(200px + 13vw);
+}
+.meet-box-bottom_content h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 27px;
+  font-family: 'Montserrat';
+}
+.meet-box-bottom_content h3 {
+  font-size: 18px;
+  margin-top: 27px;
+  font-family: 'Montserrat';
+}
+.meet-box-bottom_content p:nth-child(3) {
+  margin-top: 20px;
+}
+.meet-box-bottom_content p {
+  font-size: 18px;
+  font-family: 'Source Han Sans SC';
+}
+.meet-box-bottom_content img {
+  width: 164px;
+  height: 74px;
+}
+.meet-box-bottom_img {
+  background: url('./img/meet3.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-top: 43px;
+  background-position: -220px 0px;
+}
+.meet-mobile {
+  display: none;
+  margin: 0 auto;
+  margin-top: 64px;
+  position: relative;
+}
+.meet-box-up {
+  position: absolute;
+  width: calc(784px + 16vw);
+  height: calc(384px + 17.15vw);
+  border: 1px dashed #002654;
+  z-index: 2;
+}
+.meet-box-bottom {
+  position: relative;
+  top: 16px;
+  left: 16px;
+  width: calc(784px + 16vw);
+  height: calc(384px + 17.15vw);
+  background-color: #F2F7FA;
+  display: flex;
+}
 
+.news {
+  width: 100%;
+  max-width: 1440px;
+  margin: 100px auto 0 auto;
+  position: relative;
+}
+.news-title {
+  text-align: center;
+  font-family: 'Source Han Sans SC';
+  font-size: 40px;
+}
+.news-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFF2D4;
+  height: 22px;
+  width: 169px;
+  z-index: -1;
+}
+.news-content-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+}
+.news-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 33.33%;
+}
+.news-content img {
+  width: 350px;
+  height: 472px
+}
 
 @media screen and (max-width: 768px) {
   header {
     position: relative;
+  }
+  .logo-container {
+    height: 56px;
+    margin-bottom: 8px;
   }
   .logo {
     width: 112px;
@@ -307,10 +427,6 @@ a {
   }
   .logo img {
     height: 36px;
-  }
-  .logo-container {
-    height: 56px;
-    margin-bottom: 8px;
   }
   .mobile-menu-container {
     position: absolute;
@@ -345,6 +461,7 @@ a {
   .top-add {
     padding: 0 7px;
     height: 172px;
+    margin: 0 8px
   }
   .top-add-content-container {
     display: flex;
@@ -353,9 +470,8 @@ a {
   .top-add-content {
     font-size: 24px;
     margin: 42px 0px 61px auto;
-    width: 175px;
+    width: 180px;
   }
-
   .sophie-top-img {
     width: calc(200px + 28.75vw);
     height: calc(100px + 26.5vw);
@@ -393,9 +509,6 @@ a {
     width: calc(200px + 28vw);
     height: calc(150px + 17.18vw)
   }
-  /* .trust-box_item {
-    flex: 0 0 50%;
-  } */
   .trust-box_item img {
     width: 140px;
     height: 198px;
@@ -406,23 +519,15 @@ a {
     width: 140px;
 
   }
-  .brand-button {
-    width: 180px;
-    height: 52px;
-    margin: 0 auto;
-    border: 1px solid black;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .trust-box_item-content::before {
+    left: 30%;
+    top: 220px;
   }
 }
 @media screen and (max-width: 910px) {
   .sophie-content h2{
     margin-top: 32px;
-  }
-
-  
+  }  
 }
 @media screen and (max-width: 969px) {
   .sophie {
@@ -430,6 +535,67 @@ a {
   }
   .sophie-content h2{
     margin-top: 32px;
+  }
+ 
+}
+@media screen and (max-width: 1140px) {
+  .meet {
+    display: none;
+  }
+  .meet-mobile {
+    display: block;
+    position: relative;
+  }
+  .meet-mobile-box-up {
+    width: calc(200px + 28vw);
+    background-color: #F2F7FA;
+  }
+  .meet-mobile-box-up_imgs {
+    display: flex;
+    justify-content: space-around;
+  }
+  .meet-mobile-box-up_imgs img:nth-child(1) {
+    width: 109px;
+    height: 143px;
+    margin: 20px 0px 32px 20px;
+  }
+  .meet-mobile-box-up_imgs img:nth-child(2) {
+    width: 36px;
+    height: 20px;
+    margin: 107px 0px 0px 0px;
+  }
+  .meet-mobile-box-up_imgs img:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    margin-top: 39px;
+  }
+  .meet-mobile-box-up_content {
+    margin: 0 28px;
+  }
+  .meet-mobile-box-up_content h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 21px;
+    font-family: 'Montserrat';
+  }
+  .meet-mobile-box-up_content h3 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 21px;
+    font-family: 'Montserrat';
+  }
+  .meet-mobile-box-up_content p {
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Source Han Sans SC';
+  }
+  .meet-mobile-box-up_content img {
+    width: 164px;
+    height: 73px;
+    margin: 32px auto 41px auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 @media screen and (max-width: 470px) {
@@ -474,11 +640,10 @@ a {
   }
 }
 @media screen and (max-width: 1370px) {
-  .sophie {
+  /* .sophie {
     margin: 50px 15px 0 15px;
     align-items: center;
-  }
-
+  } */
 }
 @media screen and (max-width: 1300px) {
   .iphone-img {
@@ -533,7 +698,6 @@ a {
   }
   .iphone-content_item {
     margin: 48px auto 0 auto;
-
   }
   .iphone-content_item h3 {
     margin-bottom: 24px;
@@ -554,7 +718,7 @@ a {
   }
   .brand-box img {
     width: 88px;
-    height: 38px;
+    height: 48px;
   }
   .brand h2 {
     font-size: 24px;

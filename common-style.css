@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: URL('/asset/font/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+  src: URL('/asset/font/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Source Han Sans SC';
+  src: URL('/asset/font/sourcehansanscn/SourceHanSansCN-Normal.otf') format('truetype');
+}
+
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  width:0;
+  }
+body {
+  margin: 0;
+}
+body, h1, h2, h3, h4, h5, h6, hr, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul li {
+  display: inline;
+  margin-right: 20px;
+  font-family: 'Montserrat';
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+button {
+  margin: 0;
+	padding: 0;
+	border: 1px solid transparent;
+	outline: none;
+  background-color: unset;
+}
+.button-big:hover {
+  box-shadow: 4px 4px 0px #002654;
+  transition-timing-function: ease-in; 
+  transition-duration: 0.55s;
+  color: #002654;
+}
