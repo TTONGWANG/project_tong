@@ -7,9 +7,17 @@
   font-family: 'Source Han Sans SC';
   src: URL('/asset/font/sourcehansanscn/SourceHanSansCN-Normal.otf') format('truetype');
 }
-
+/* *{
+  outline: solid #f00 1px !important;
+  background: #000 !important;
+  color: #fff !important;
+} */
+* {
+  box-sizing: border-box;
+}
 html {
-  font-family: sans-serif;
+  font-family: 'Montserrat';
+
   box-sizing: border-box;
 }
 ::-webkit-scrollbar{
@@ -32,14 +40,28 @@ ul {
 ul li {
   display: inline;
   margin-right: 20px;
-  font-family: 'Montserrat';
 }
 a {
   text-decoration: none;
   color: black;
   font-size: 14px;
 }
-
+input {
+  font-family: 'Source Han Sans SC';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  outline: none;
+  outline-width: 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
 button {
   margin: 0;
 	padding: 0;
@@ -47,9 +69,36 @@ button {
 	outline: none;
   background-color: unset;
 }
-.button-big:hover {
+.button-big {
+  width: 180px;
+  height: 52px;
+}
+.button-small{
+  width: 120px;
+  height: 33px;
+}
+.button-big,.button-small {
+  margin: 0 auto;
+  border: 1px solid black;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button-big:hover, .button-small:hover{
   box-shadow: 4px 4px 0px #002654;
   transition-timing-function: ease-in; 
   transition-duration: 0.55s;
   color: #002654;
 }
+
+.wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+.wrapper-small {
+  max-width: 1110px;
+  width: 100%;
+}
+
